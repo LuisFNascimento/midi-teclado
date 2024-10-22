@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contador de Cliques</title>
+</head>
+<body>
+  <button id="contadorBotao">Clique aqui!</button>
+
+  <script>
+    // Inicializa o contador
+    let contador = 0;
+
+    // Referencia ao botão
+    const botao = document.getElementById('contadorBotao');
+
+    // Função chamada a cada clique
+    botao.addEventListener('click', () => {
+      contador++;
+      console.log(`O contador está agora em: ${contador}`);
+    });
+  </script>
+</body>
+</html>
